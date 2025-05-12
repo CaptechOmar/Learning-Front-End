@@ -1,0 +1,33 @@
+:root {
+  --border-size: 5px;
+}
+
+.elzero-lines {
+  width: 500px;
+  height: 100px;
+  margin: 30px;
+  border: var(--border-size) solid red;
+  outline: var(--border-size) solid blue;
+  position: absolute;
+  text-align: center;
+}
+
+.elzero-lines::after {
+  content: "";
+  border: var(--border-size) solid green;
+  position: absolute;
+  width: 520px;
+  height: 120px;
+  top: -15px;
+  left: -15px;
+}
+
+.elzero-lines::before {
+  content: "";
+  border: var(--border-size) solid black;
+  position: absolute;
+  width: 530px;
+  height: 130px;
+  top: -20px;
+  left: -20px;
+}
